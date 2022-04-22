@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-         #container{
-           height: 200px;
-           width: 600px;
-           border: 1px solid orange;
-           display: flex;
-           flex-direction: column;
-        }
-        #container > button {
-           height: 100px;
-           width: 120px;
-        }
-        #container > button:hover {
-            cursor: pointer;
-        }
+      button {
+        border-radius: 5px;
+        padding: 15px 20px 15px 20px;
+        margin: 0px 5px;
+        border: 0px solid white;
+        font-weight: bold;
+      }
+      body {
+        text-align: center;
+        margin-top: 200px;
+      }
     </style>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body></body>
 </html>
 
-
 <script>
-    var buttonObj = [
-      { name: "Primary", color: "white", bgColor: "blue" },
-      { name: "Secondary", color: "white", bgColor: "grey" },
-      { name: "Danger", color: "white", bgColor: "red" },
-      { name: "Warning", color: "black", bgColor: "yellow" },
-      { name: "Info", color: "white", bgColor: "cyan" },
-      { name: "Light", color: "black", bgColor: "white" },
-      { name: "Success", color: "white", bgColor: "green" },
-      { name: "Dark", color: "white", bgColor: "black" },
-      { name: "Link", color: "blue", bgColor: "white" },
-    ];
-  
-    buttonObj.forEach(function (elem) {
-      console.log(elem.bgColor);
-      var btn = document.createElement("button");
-      btn.setAttribute("id","container");
-      btn.innerText = elem.name;
-      btn.style.backgroundColor = elem.bgColor;
-      btn.style.color = elem.color;
-      document.querySelector("body").append(btn);
-    });
-  </script>
-  
+  var buttonObj = [
+    { name: "Primary", color: "white", bgColor: "blue" },
+    { name: "Secondary", color: "white", bgColor: "grey" },
+    { name: "Danger", color: "white", bgColor: "red" },
+    { name: "Warning", color: "black", bgColor: "yellow" },
+    { name: "Info", color: "white", bgColor: "cyan" },
+    { name: "Light", color: "black", bgColor: "white" },
+    { name: "Success", color: "white", bgColor: "green" },
+    { name: "Dark", color: "white", bgColor: "black" },
+    { name: "Link", color: "blue", bgColor: "white" },
+  ];
+
+  buttonObj.forEach(function (elem) {
+    console.log(elem.bgColor);
+    var btn = document.createElement("button");
+    btn.setAttribute("id", "container");
+    btn.innerText = elem.name;
+    btn.style.backgroundColor = elem.bgColor;
+    btn.style.color = elem.color;
+    document.querySelector("body").append(btn);
+  });
+</script>
