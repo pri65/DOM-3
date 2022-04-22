@@ -7,22 +7,10 @@
     <title>Document</title>
     <style>
          #container{
-            width: 80%; 
-            padding: 15px;
-            display: flex;
-            justify-content: space-evenly;
-            margin: auto;
+           
         }
         #container > button {
-            flex-grow: 1;
-            margin: 0 5px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 0;
-            background-color: #007bfe;
-            color: white;
-            font-weight: 500;
-            font-size: 20px;
+           
         }
         #container > button:hover {
             cursor: pointer;
@@ -51,6 +39,7 @@
     buttonObj.forEach(function (elem) {
       console.log(elem.bgColor);
       var btn = document.createElement("button");
+      btn.setAttribute("id","container");
       btn.innerText = elem.name;
       btn.style.backgroundColor = elem.bgColor;
       btn.style.color = elem.color;
